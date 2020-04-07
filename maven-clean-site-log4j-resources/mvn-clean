@@ -1,0 +1,22 @@
+Maven Clean:
+
+balaji@ip-172-31-6-192:~/my-app$ ls
+pom.xml  src  target
+balaji@ip-172-31-6-192:~/my-app$ mvn clean
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.mycompany.app:my-app >----------------------
+[INFO] Building my-app 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ my-app ---
+[INFO] Deleting /home/balaji/my-app/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.326 s
+[INFO] Finished at: 2020-04-07T17:24:36Z
+[INFO] ------------------------------------------------------------------------
+balaji@ip-172-31-6-192:~/my-app$ ls
+pom.xml  src
+balaji@ip-172-31-6-192:~/my-app$ 
