@@ -1,0 +1,12 @@
+
+Creating a Maven project with archetype .jar
+============================================
+
+balaji@ip-172-31-6-192:~$ mvn -B archetype:generate \
+>   -DarchetypeGroupId=org.apache.maven.archetypes \
+>   -DartifactId=my-app
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
