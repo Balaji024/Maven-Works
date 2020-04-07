@@ -1,0 +1,27 @@
+Downloading maven in Ubuntu18.04:
+=================================
+
+(.)balaji@ip-172-31-6-192:~$ wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+   --2020-04-07 07:27:54--  https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz
+   Resolving downloads.apache.org (downloads.apache.org)... 88.99.95.219, 2a01:4f8:10a:201a::2
+   Connecting to downloads.apache.org (downloads.apache.org)|88.99.95.219|:443... connected.
+   HTTP request sent, awaiting response... 200 OK
+   Length: 9506321 (9.1M) [application/x-gzip]
+   Saving to: ‘apache-maven-3.6.3-bin.tar.gz.1’
+   
+   apache-maven-3.6.3-bin.tar.gz.1          100%[===============================================================================>]   9.07M  3.50MB/s    in 2.6s    
+   
+   2020-04-07 07:27:57 (3.50 MB/s) - ‘apache-maven-3.6.3-bin.tar.gz.1’ saved [9506321/9506321]
+   
+(.)tar xzvf apache-maven-3.6.3-bin.tar.gz
+
+(.)balaji@ip-172-31-6-192:~$ export PATH=/home/balaji/apache-maven-3.6.3/bin:$PATH                                                                                  
+   balaji@ip-172-31-6-192:~$ ls
+   apache-maven-3.6.3  apache-maven-3.6.3-bin.tar.gz
+   balaji@ip-172-31-6-192:~$ mvn --version
+   Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+   Maven home: /home/balaji/apache-maven-3.6.3
+   Java version: 1.8.0_242, vendor: Private Build, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre
+   Default locale: en, platform encoding: UTF-8
+   OS name: "linux", version: "4.15.0-1063-aws", arch: "amd64", family: "unix"
+ 
