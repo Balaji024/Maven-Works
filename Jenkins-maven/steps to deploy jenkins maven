@@ -1,0 +1,10 @@
+Steps to Deploy jenkins with maven:
+
+--> Fork the sample project from this repo
+     https://github.com/jenkins-docs/simple-java-maven-app
+	 
+---> Install necccessary plugins if requiered.(Github)
+----> Create a pipeline item 
+-----> Build definition give Pipeline Script with SCM
+-----> create a Jenkinsfile in the root of your repo by scripting your build definition.
+-----> build now

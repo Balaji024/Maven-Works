@@ -1,0 +1,46 @@
+Maven Archetype Webapp:
+=======================
+
+balaji@ip-172-31-6 mvn archetype:generate     -DarchetypeGroupId=org.apache.maven.archetypes     -DarchetypeArtifactId=maven-archetype-webapp     -DgroupId=com.mycompany.app     -DartifactId=my-webapp
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:3.1.2:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:3.1.2:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.1.2:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Interactive mode
+[INFO] Archetype [org.apache.maven.archetypes:maven-archetype-webapp:1.4] found in catalog remote
+[INFO] Using property: groupId = com.mycompany.app
+[INFO] Using property: artifactId = my-webapp
+Define value for property 'version' 1.0-SNAPSHOT: : 1.0-SNAPSHOT 
+[INFO] Using property: package = com.mycompany.app
+Confirm properties configuration:
+groupId: com.mycompany.app
+artifactId: my-webapp
+version: 1.0-SNAPSHOT
+package: com.mycompany.app
+ Y: : Y
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Archetype: maven-archetype-webapp:1.4
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: my-webapp
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: packageInPathFormat, Value: com/mycompany/app
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] Parameter: package, Value: com.mycompany.app
+[INFO] Parameter: groupId, Value: com.mycompany.app
+[INFO] Parameter: artifactId, Value: my-webapp
+[INFO] Project created from Archetype in dir: /home/balaji/my-webapp
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  32.104 s
+[INFO] Finished at: 2020-04-08T12:59:07Z

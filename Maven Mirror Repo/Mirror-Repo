@@ -1,0 +1,49 @@
+
+
+
+Downloading Dependencies From Mirror Repo:
+
+Steps: create  a repository in any repo manager tool for artifacts with a specified remote url.
+       in settings.xml configure the mirror element with url and repo name of created remote repo.
+
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/tukaani/xz/1.8/xz-1.8.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/objenesis/objenesis/2.6/objenesis-2.6.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/codehaus/plexus/plexus-interpolation/1.25/plexus-interpolation-1.25.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/codehaus/plexus/plexus-archiver/3.6.0/plexus-archiver-3.6.0.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/iq80/snappy/snappy/0.4/snappy-0.4.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/apache/commons/commons-compress/1.16.1/commons-compress-1.16.1.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/codehaus/plexus/plexus-interpolation/1.25/plexus-interpolation-1.25.jar (0 B at 0 B/s)
+[INFO] Downloading from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/tukaani/xz/1.8/xz-1.8.jar (0 B at 0 B/s)
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/com/thoughtworks/xstream/xstream/1.4.10/xstream-1.4.10.jar (0 B at 0 B/s)
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar (0 B at 0 B/s)
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/apache/maven/shared/maven-mapping/3.0.0/maven-mapping-3.0.0.jar (0 B at 0 B/s)
+[INFO] Downloaded from mirror-repo: http://3.15.12.17:8081/repository/maven-central-balaji-test/org/codehaus/plexus/plexus-utils/3.1.0/plexus-utils-3.1.0.jar (0 B at 0 B/s)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [my-webapp-balaji] in [/home/balaji/mavendeploy/my-webapp-balaji/target/my-webapp-balaji]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/balaji/mavendeploy/my-webapp-balaji/src/main/webapp]
+[INFO] Webapp assembled in [46 msecs]
+[INFO] Building war: /home/balaji/mavendeploy/my-webapp-balaji/target/my-webapp-balaji.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for app 1.0-SNAPSHOT:
+[INFO] 
+[INFO] app ................................................ SUCCESS [  0.019 s]
+[INFO] my-app-balaji ...................................... SUCCESS [01:25 min]
+[INFO] my-webapp-balaji Maven Webapp ...................... SUCCESS [ 42.766 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:08 min
+[INFO] Finished at: 2020-04-08T14:54:16Z
+[INFO] ------------------------------------------------------------------------
+balaji@ip-172-31-6-192:~/mavendeploy$ mvn package -s maven-settings.xml
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 

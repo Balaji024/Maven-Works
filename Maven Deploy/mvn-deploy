@@ -1,0 +1,65 @@
+Maven Deploy to Remote Repositoy:
+================================
+
+
+balaji@ip-172-31-6-192:~/my-app$ mvn deploy -s maven-settings.xml
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< mycompany.app.balaji:my-app-balaji >-----------------
+[INFO] Building my-app-balaji 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-app-balaji ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ my-app-balaji ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-app-balaji ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/balaji/my-app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ my-app-balaji ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ my-app-balaji ---
+[INFO] Surefire report directory: /home/balaji/my-app/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mycompany.app.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ my-app-balaji ---
+[INFO] Building jar: /home/balaji/my-app/target/my-app-balaji-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ my-app-balaji ---
+[INFO] Installing /home/balaji/my-app/target/my-app-balaji-1.0-SNAPSHOT.jar to /home/balaji/.m2/repository/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-SNAPSHOT.jar
+[INFO] Installing /home/balaji/my-app/pom.xml to /home/balaji/.m2/repository/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.7:deploy (default-deploy) @ my-app-balaji ---
+[INFO] Downloading from maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Uploading to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-20200408.082553-1.jar
+[INFO] Uploaded to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-20200408.082553-1.jar (2.9 kB at 32 kB/s)
+[INFO] Uploading to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-20200408.082553-1.pom
+[INFO] Uploaded to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/my-app-balaji-1.0-20200408.082553-1.pom (2.0 kB at 34 kB/s)
+[INFO] Downloading from maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/maven-metadata.xml
+[INFO] Uploading to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/maven-metadata.xml
+[INFO] Uploaded to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/1.0-SNAPSHOT/maven-metadata.xml (777 B at 17 kB/s)
+[INFO] Uploading to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/maven-metadata.xml
+[INFO] Uploaded to maven-snapshots: http://3.15.12.17:8081/repository/maven-snapshots/mycompany/app/balaji/my-app-balaji/maven-metadata.xml (291 B at 5.4 kB/s)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.918 s
+[INFO] Finished at: 2020-04-08T08:25:53Z
+[INFO] ------------------------------------------------------------------------
+balaji@ip-172-31-6-192:~/my-app$ 

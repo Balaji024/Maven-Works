@@ -1,0 +1,97 @@
+
+Maven Multi Module Deploy
+==========================
+
+balaji@ip-172-31-6-192:~/mavendeploy$ mvn verify
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] app                                                                [pom]
+[INFO] my-app-balaji                                                      [jar]
+[INFO] my-webapp-balaji Maven Webapp                                      [war]
+[INFO] 
+[INFO] -----------------------< com.mycompany.app:app >------------------------
+[INFO] Building app 1.0-SNAPSHOT                                          [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] ------------------< com.mycompany.app:my-app-balaji >-------------------
+[INFO] Building my-app-balaji 1.0-SNAPSHOT                                [2/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ my-app-balaji ---
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ my-app-balaji ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/balaji/mavendeploy/my-app/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ my-app-balaji ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/balaji/mavendeploy/my-app/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ my-app-balaji ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/balaji/mavendeploy/my-app/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ my-app-balaji ---
+[INFO] Surefire report directory: /home/balaji/mavendeploy/my-app/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.mycompany.app.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ my-app-balaji ---
+[INFO] Building jar: /home/balaji/mavendeploy/my-app/target/my-app-balaji-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------------< com.mycompany.app:my-webapp-balaji >-----------------
+[INFO] Building my-webapp-balaji Maven Webapp 1.0-SNAPSHOT                [3/3]
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:resources (default-resources) @ my-webapp-balaji ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/balaji/mavendeploy/my-webapp-balaji/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ my-webapp-balaji ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.0.2:testResources (default-testResources) @ my-webapp-balaji ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/balaji/mavendeploy/my-webapp-balaji/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ my-webapp-balaji ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ my-webapp-balaji ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ my-webapp-balaji ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [my-webapp-balaji] in [/home/balaji/mavendeploy/my-webapp-balaji/target/my-webapp-balaji]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/home/balaji/mavendeploy/my-webapp-balaji/src/main/webapp]
+[INFO] Webapp assembled in [29 msecs]
+[INFO] Building war: /home/balaji/mavendeploy/my-webapp-balaji/target/my-webapp-balaji.war
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for app 1.0-SNAPSHOT:
+[INFO] 
+[INFO] app ................................................ SUCCESS [  0.007 s]
+[INFO] my-app-balaji ...................................... SUCCESS [  2.469 s]
+[INFO] my-webapp-balaji Maven Webapp ...................... SUCCESS [  0.890 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.494 s
+[INFO] Finished at: 2020-04-08T13:34:48Z
+[INFO] ------------------------------------------------------------------------
